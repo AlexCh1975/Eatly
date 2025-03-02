@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <!-- <HeaderComponent/> -->
-    <HomeView/>
+    <HeaderComponent/>
+    <router-view></router-view>
+    <!-- <HomeView/> -->
     <!-- <MenuView/> -->
     <!-- <MenuDetailsView/> -->
     <!-- <SingUpView/> -->
@@ -12,26 +13,26 @@
       <router-link to="/about">About</router-link>
     </nav> -->
     <!-- <router-view/> -->
-    <!-- <FooterComponent /> -->
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-// import HeaderComponent from '@/components/HeaderComponent.vue';
-// import FooterComponent from '@/components/FooterComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 // import MenuDetailsView from '@/views/MenuDetailsView.vue';
 // import SingUpView from '@/views/SingUpView.vue';
 // import RestauransCard from '@/components/RestaurantsCard.vue';
-import HomeView from '@/views/HomeView.vue';
+// import HomeView from '@/views/HomeView.vue';
 // import MenuView fcomponentsrom '@/views/MenuView.vue';
 // import SingRightComp from '@/components/SingRightComp.vue';
 
 export default {
   name: 'App',
   components: {
-    // HeaderComponent,
-    HomeView,
-    // FooterComponent,
+    HeaderComponent,
+    // HomeView,
+    FooterComponent,
     // MenuView,
     // MenuDetailsView,
     // SingUpView,
